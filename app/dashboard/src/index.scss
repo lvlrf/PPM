@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.bg-blue-animate {
+  animation: blur-animate 200ms ease-in;
+  backdrop-filter: blur(10px);
+}
+
+@keyframes blur-animate {
+  from {
+    backdrop-filter: blur(1px);
+  }
+  to {
+    backdrop-filter: blur(10px);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+table thead {
+  th:first-of-type {
+    border-top-left-radius: 8px;
+  }
+  th:last-of-type {
+    border-top-right-radius: 8px;
+  }
+}
+
+.last-row {
+  td:first-of-type {
+    border-bottom-left-radius: 8px;
+  }
+  td:last-of-type {
+    border-bottom-right-radius: 8px;
+  }
+}
+
+.slick-prev {
+  left: -40px;
+}
+.slick-next {
+  right: -40px;
+}
+.slick-prev,
+.slick-next {
+  z-index: 100;
+}
+.chakra-popover__popper {
+  z-index: 9999 !important;
+}
+.inbound-item .chakra-checkbox__label {
+  max-width: 100%;
+  width: 100%;
+}
